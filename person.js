@@ -7,11 +7,11 @@ class Person {
     } 
 
     hello() {
-        return `hello, my name is ${this.name} and I am a ${this.age} years old ${this.gender}. My interests are ${this.interests}`
+        return `Hello, my name is ${this.name} and I am  ${this.age} years old. My interests are ${this.interests[0]},${this.interests[1]} and ${this.interests[2]}`
     }
 
 };
 
-let obj = new Person('Anttonert',20, 'Female',['programming', 'dancing', 'reading', 'exploring'] );
-let greeting = obj.hello()
+let person = new Person('Ryan',30,'male',['being a hardarse','agile', 'ssd hard drives'] );
+let greeting = person.hello()
 console.log(greeting)
